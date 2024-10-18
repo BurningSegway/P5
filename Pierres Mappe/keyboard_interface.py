@@ -28,8 +28,10 @@ def draw_box_with_variable(value):
     # Define the box size
     box_width = 200
     box_height = 100
+
     box_x = (window_size[0] - box_width) // 2
-    box_y = (window_size[1] - box_height) // 2
+    box_y = 0
+    #box_y = (window_size[1] - box_height) // 2
 
     # Draw a box (rectangle)
     pygame.draw.rect(screen, BOX_COLOR, (box_x, box_y, box_width, box_height))
