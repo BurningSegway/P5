@@ -95,7 +95,7 @@ def update(frame):
     bottle_x, bottle_z = draw_bottle(angle)
     bottle_outline.set_data(bottle_x, bottle_z)
 
-    # Update water fill
+    # Update water fill 
     water_x, water_z = draw_water(angle, water_height)
     water_fill.set_xy(np.column_stack((water_x, water_z)) if len(water_x) > 0 else np.empty((0, 2)))
 
